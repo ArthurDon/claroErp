@@ -1,0 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap');
+@import 'root.css';
+@import 'reset.css';
+@import 'style.css';
+@import 'all.min.css'; /* FontAwesome */
+@import 'owl.carousel.min.css'; /* Owl owl-carousel owl-theme */
+@import 'owl.theme.default.min.css'; /* Owl */
+@import 'style.css'; /* Owl */

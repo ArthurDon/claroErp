@@ -1,0 +1,27 @@
+:root {
+    /*
+        # Reset.css
+    */
+
+    /* Default: hsla(0, 0%, 0%, 1) */
+    --caret-color:;
+
+    /* Default: Arial, Helvetica, sans-serif */
+    --font-family: 'Poppins', sans-serif;
+
+    /* Default: hsla(0, 100%, 69%, 1) */
+    --out-of-range:;
+
+    /* Default: hsla(0, 0%, 100%, 1) */
+    --selection-color:;
+
+    /* Default: hsla(0, 0%, 40%, 1) */
+    --selection-bg-color:;
+
+    /* Default: hsla(0, 0%, 40%, 1) */
+    --progress-color-bar:;
+
+    --primary-color: hsla(357, 77%, 52%, 1);
+
+    --secundary-color: hsla(38, 96%, 48%, 1);
+}

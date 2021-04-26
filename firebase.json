@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": "build",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          { "key": "Access-Control-Allow-Origin", "value": "*" },
+          { "key": "X-Frame-Options", "value": "deny" },
+          { "key": "X-Content-Type-Options", "value": "nosniff" },
+          { "key": "X-XSS-Protection", "value": "1; mode=block" },
+          { "key": "Strict-Transport-Security", "value": "max-age=31536000" },
+          {
+            "key": "Referrer-Policy",
+            "value": "no-referrer, strict-origin-when-cross-origin"
+          },
+          {
+            "key": "Content-Security-Policy",
+            "value": "default-src 'self' https://google.com https://www.googleapis.com https://www.google-analytics.com https://bff-homol.whitelabel.com.br https://bff.whitelabel.com.br https://googleapis.com https://stats.g.doubleclick.net https://fs-chatbot-erp-claro-homol.firebaseapp.com https://fs-chatbot-erp-claro.firebaseapp.com https://google-analytics.com https://cdn.privacytools.com.br; script-src 'self' 'sha256-/ICG8wd9SfdbjN52TY6ceYtRbwv0H9voA+RTUzjcIAc=' 'sha256-+96jMDbMyk8SNbOUih+5FpdPs67bLA2Lgj8rRoMB31I=' 'sha256-MreByoK9rxIvP+iNh/eUqUi+wni+1lW+En8jJHpjKfo=' 'sha256-Ei3SGy/+fTWNDVbfqJXMuI5RNC38rNNcVslsq8p+PKc=' https://fs-chatbot-erp-claro-homol.firebaseapp.com https://fs-chatbot-erp-claro.firebaseapp.com https://cdn.privacytools.com.br; style-src 'self' 'unsafe-inline' https://fs-chatbot-erp-claro-homol.firebaseapp.com https://fs-chatbot-erp-claro.firebaseapp.com https://cdn.privacytools.com.br https://fonts.googleapis.com; img-src 'self' data: https://fs-chatbot-erp-claro-homol.firebaseapp.com https://fs-chatbot-erp-claro.firebaseapp.com https://fs-homol-chatbot-egestor.firebaseapp.com https://cdn.privacytools.com.br; font-src 'self' https://fonts.gstatic.com; object-src 'none'; media-src 'self'; form-action 'self'; frame-ancestors 'self';"
+          }
+        ]
+      }
+    ]
+  }
+}

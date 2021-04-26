@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#000000" />
+  <meta name="description" content="Claro E-Finanças" />
+  <title>Claro E-Finanças</title>
+  <link rel="stylesheet" href="%PUBLIC_URL%/assets/css/import.css">
+  <link rel="stylesheet" href="%REACT_APP_URL_CHATBOT%/assets/css/styles.css">
+</head>
+
+<body>
+  <chatbot></chatbot>
+  <div id="root"></div>
+</body>
+
+<script>
+
+  const URL_CHATBOT = '%REACT_APP_URL_CHATBOT%';
+  let scripts = [
+    "%PUBLIC_URL%/assets/js/jquery.min.js",
+    "%PUBLIC_URL%/assets/js/owl.carousel.min.js",
+    "%PUBLIC_URL%/assets/js/jquery.mask.min.js",
+    "%PUBLIC_URL%/assets/js/script.js",
+    "%REACT_APP_URL_CHATBOT%/assets/js/scripts.js",
+    "%PUBLIC_URL%/assets/js/chatbot.js"
+  ];
+
+  scripts.forEach(function (scriptUrl) {
+    var s = document.createElement('script');
+    s.async = false;
+    s.src = scriptUrl;
+    document.head.appendChild(s);
+  });
+</script>
+
+</html>
